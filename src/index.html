@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gatoooos</title>
+</head>
+<body>
+    <h1>gatoooos</h1>
+
+    <span id="error"></span>
+    <section id="randomMichis">
+        <h2>michis aleatorios</h2>
+        <article>
+            <img alt="foto gatito aleatorio" width="300" id="img1">
+            <button id="btn1" >agregar a favoritos</button>
+        </article>
+        <article>
+            <img alt="foto gatito aleatorio" width="300" id="img2">
+            <button id="btn2" >agregar a favoritos</button>
+        </article>
+        
+        <button type="button" id="boton" >recargar</button>
+
+        
+    </section>
+
+    <section id="uploadMichi">
+        <h2>sube la foto de tu michi</h2>
+
+        <form id="uploadingForm">
+            <input id="file" type="file" name="file" onchange="previewImage()"/>
+            <img id="preview" width="150">
+            <button type="button" onclick="uploadMichiPhoto()">subir foto de michi</button>
+        </form>
+    </section>
+
+    <section id="michisFavoritos">
+        <h2>michis favoritos</h2>
+        <img alt="michi favorito" width="300" id="michifav">
+        <button>quitar de favoritas</button>
+    </section>
+    
+    
+
+    <script src="./main.js"></script>
+</body>
+</html>
